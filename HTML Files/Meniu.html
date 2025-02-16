@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html lang="ro">
+    <head>
+        <title>Tavola di Nonna</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Great+Vibes&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Dancing+Script:wght@500&family=Great+Vibes&display=swap');
+        </style>
+        <link rel="icon" type="image/png" href="favicon_proiect.png">
+        <link rel="stylesheet" href="stil.css">
+        <script src="sitejs.js"></script>
+        <script src="buton_val_nutr.js"></script>
+    </head>
+
+<body class="pagina-meniu">
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="Acasa.html">
+                    <img src="favicon_proiect.png" alt="Logo Tavola di Nonna">
+                </a>
+                <span class="logo-text">Tavola di Nonna</span>
+            </div>
+
+            <div id="cautare-container">
+                <label for="cautare-meniu">Caută un preparat:</label>
+                <input type="text" id="cautare-meniu" placeholder="Introdu numele preparatului...">
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Acasa.html">Acasă</a></li>
+                <li class="dropdown">
+                    <a href="DespreNoi.html">Despre Noi</a>
+                    <ul class="dropdown-content">
+                        <li><a href="DespreNoi.html">Cum a început</a></li>
+                        <li><a href="Imagini.html">Imagini</a></li>
+                    </ul>
+                </li>
+                <li><a href="Meniu.html">Meniu</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <button id="afiseaza-valori">Afișează valori nutritionale</button>
+
+        
+
+        <section id="menu">
+            <h2>Antipasto ~100-120g</h2>
+            <div class="dish" data-nume="Bruschetta al Pomodoro">
+                <h3>Bruschetta al Pomodoro</h3>
+                <p class="ingredients">Pâine prăjită, roșii proaspete, busuioc, usturoi, ulei de măsline extravirgin, sare de mare</p>
+                <p class="nutrition">Valori nutriționale: Calorii: 150 kcal, Proteine: 3 g, Grăsimi: 7 g, Carbohidrați: 18 g, Sodiu: 200 mg</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Caprese">
+                <h3>Caprese</h3>
+                <p class="ingredients">Felii de mozzarella di bufala, roșii proaspete, busuioc, ulei de măsline extravirgin, reducție de oțet balsamic</p>
+                <p class="nutrition">Valori nutriționale: Calorii: 250 kcal, Proteine: 12 g, Grăsimi: 18 g, Carbohidrați: 5 g, Sodiu: 250 mg</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Prosciutto e Melone">
+                <h3>Prosciutto e Melone</h3>
+                <p class="ingredients">Felii de pepene galben, prosciutto crudo, ulei de măsline extravirgin</p>
+                <p class="nutrition">Valori nutriționale: Calorii: 180 kcal, Proteine: 9 g, Grăsimi: 8 g, Carbohidrați: 15 g, Sodiu: 300 mg</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Bruschetta ai Funghi">
+                <h3>Bruschetta ai Funghi</h3>
+                <p class="ingredients">Pâine prăjită, funghi porcini sotate, usturoi, pătrunjel proaspăt, ulei de măsline extravirgin, sare și piper</p>
+                <p class="nutrition">Valori nutriționale: Calorii: 170 kcal, Proteine: 4 g, Grăsimi: 9 g, Carbohidrați: 18 g, Sodiu: 220 mg</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+
+            <h2>Paste ~200-250g</h2>
+            
+            <div class="dish" data-nume="Spaghetti Carbonara">
+                <h3>Spaghetti Carbonara</h3>
+                <p class="ingredients">Spaghetti proaspete, guanciale, ouă bio, pecorino romano, piper negru proaspat macinat</p>
+                <p class="nutrition">Valori nutriționale:Calorii: 600 kcal, Proteine: 25 g, Grăsimi: 30 g, Carbohidrați: 60 g, Sodiu: 700mg</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Cacio e pepe">
+                <h3>Cacio e pepe</h3>
+                <p class="ingredients">Spaghetti proaspete, pecorino romano, piper negru proaspat macinat</p>
+                <p class="nutrition">Valori nutriționale:Calorii: 500 kcal, Proteine: 20 g, Grăsimi: 20 g, Carbohidrați: 60 g, Sodiu 700mg</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Spaghetti Aglio e Olio">
+                <h3>Spaghetti Aglio e Olio</h3>
+                <p class="ingredients">Spaghetti proaspete, ulei de masline extra virgin, usturoi, pepperoncino, patrunjel proaspat</p>
+                <p class="nutrition">Valori nutriționale:Calorii: 450 kcal, Proteine: 10 g, Grăsimi: 20 g, Carbohidrați: 55 g, Sodiu 200mg</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Tagliatelle ai funghi">
+                <h3>Tagliatelle ai funghi</h3>
+                <p class="ingredients">Tagliatelle proaspete, funghi porcini, ulei de masline extra virgin, vin alb sec, usturoi patrunjel proaspat</p>
+                <p class="nutrition">Valori nutriționale:Calorii: 500 kcal, Proteine: 15 g, Grăsimi: 22 g, Carbohidrați: 55 g, Sodiu 300mg</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Linguini allo scoglio">
+                <h3>Linguini allo scoglio</h3>
+                <p class="ingredients">Linguine proaspete, creveti, scoici, vongole, ulei de masline extra virgin, vin alb sec, usturoi, pepperoncino, patrunjel proaspat</p>
+                <p class="nutrition">Valori nutriționale:Calorii: 500 kcal, Proteine: 25 g, Grăsimi: 18 g, Carbohidrați: 55 g, Sodiu 600mg</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Ravioli">
+                <h3>Ravioli</h3>
+                <p class="ingredients">Ravioli proaspeti, ricotta, spanac proaspat, parmigiano reggiano, nucsoara, unt, frunze de salvie</p>
+                <p class="nutrition">Valori nutriționale:Calorii: 550 kcal, Proteine: 20 g, Grăsimi: 25 g, Carbohidrați: 60 g, Sodiu 400mg</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+
+            <h2>Pizza ~350g</h2>
+
+            <div class="dish" data-nume="Pizza Margherita">
+                <h3>Pizza Margherita</h3>
+                <p class="ingredients">Blat napoletan, sos de roșii proaspăt, mozzarella di bufala, busuioc proaspăt, ulei de măsline extravirgin</p>
+                <p class="nutrition">Valori nutriționale: Calorii: 550 kcal, Proteine: 20 g, Grăsimi: 18 g, Carbohidrați: 70 g, Sodiu: 600 mg</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Pizza Napoletana">
+                <h3>Pizza Napoletana</h3>
+                <p class="ingredients">Blat tradițional napoletan, sos de roșii San Marzano, mozzarella di bufala, anșoa, oregano, ulei de măsline extravirgin</p>
+                <p class="nutrition">Valori nutriționale: Calorii: 580 kcal, Proteine: 22 g, Grăsimi: 20 g, Carbohidrați: 65 g, Sodiu: 750 mg</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Pizza Quattro Formaggi">
+                <h3>Pizza Quattro Formaggi</h3>
+                <p class="ingredients">Mozzarella, gorgonzola, parmezan, brânză fontina, blat subțire napoletan</p>
+                <p class="nutrition">Valori nutriționale: Calorii: 680 kcal, Proteine: 28 g, Grăsimi: 35 g, Carbohidrați: 60 g, Sodiu: 800 mg</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Pizza Capricciosa">
+                <h3>Pizza Capricciosa</h3>
+                <p class="ingredients">Blat pufos, sos de roșii, mozzarella, ciuperci, șuncă, măsline, anghinare, ulei de măsline extravirgin</p>
+                <p class="nutrition">Valori nutriționale: Calorii: 620 kcal, Proteine: 25 g, Grăsimi: 25 g, Carbohidrați: 65 g, Sodiu: 700 mg</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Pizza Prosciutto e Funghi">
+                <h3>Pizza Prosciutto e Funghi</h3>
+                <p class="ingredients">Blat subțire, sos de roșii, mozzarella, prosciutto cotto, ciuperci proaspete, ulei de măsline extravirgin</p>
+                <p class="nutrition">Calorii: 610 kcal, Proteine: 23 g, Grăsimi: 27 g, Carbohidrați: 65 g, Sodiu: 720 mg</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Pizza Vegetariana">
+                <h3>Pizza Vegetariana</h3>
+                <p class="ingredients">Blat fin, sos de roșii, mozzarella, zucchini proaspeți, felii de vânătă, ardei gras, ulei de măsline extravirgin</p>
+                <p class="nutrition">Valori nutriționale: Calorii: 570 kcal, Proteine: 20 g, Grăsimi: 20 g, Carbohidrați: 65 g, Sodiu: 600 mg</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Calzone">
+                <h3>Calzone</h3>
+                <p class="ingredients">Aluat crocant, sos de roșii, mozzarella, ricotta, șuncă, ciuperci, ulei de măsline extravirgin</p>
+                <p class="nutrition">Valori nutriționale: Calorii: 700 kcal, Proteine: 30 g, Grăsimi: 32 g, Carbohidrați: 65 g, Sodiu: 750 mg</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <h2>Preparate tradiționale</h2>
+            <div class="dish" data-nume="Osso Buco alla Milanese">
+                <h3>Osso Buco alla Milanese ~300g</h3>
+                <p class="ingredients">Rasol de vițel gătit lent, vin alb, supă de vită, roșii, morcov, ceapă, țelină, gremolata cu lămâie și pătrunjel</p>
+                <p class="nutrition">Valori nutriționale: Calorii: 500 kcal, Proteine: 35 g, Grăsimi: 30 g, Carbohidrați: 15 g, Sodiu: 600 mg</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Arancini">
+                <h3>Arancini ~120g</h3>
+                <p class="ingredients">Bulete de orez cu mozzarella, ragu de carne, mazăre, pane, prăjite până devin crocante</p>
+                <p class="nutrition">Calorii: 250 kcal, Proteine: 8 g, Grăsimi: 10 g, Carbohidrați: 30 g, Sodiu: 400 mg</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Saltimbocca alla Romana">
+                <h3>Saltimbocca alla Romana ~150g</h3>
+                <p class="ingredients">Felii subțiri de vițel, prosciutto, salvie proaspătă, gătite în unt și vin alb</p>
+                <p class="nutrition">Valori nutriționale: Calorii: 380 kcal, Proteine: 28 g, Grăsimi: 22 g, Carbohidrați: 2 g, Sodiu: 700 mg</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Porchetta">
+                <h3>Porchetta ~200g</h3>
+                <p class="ingredients">Ruladă de carne de porc, asezonată cu usturoi, ierburi aromatice, coaptă încet până devine crocantă</p>
+                <p class="nutrition">Valori nutriționale: Calorii: 600 kcal, Proteine: 45 g, Grăsimi: 40 g, Carbohidrați: 2 g, Sodiu: 900 mg</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Coda alla Vaccinara">
+                <h3>Coda alla Vaccinara ~250g</h3>
+                <p class="ingredients">Cozi de vită gătite încet în sos de roșii cu țelină, morcov, ceapă, și aromate cu condimente</p>
+                <p class="nutrition">Valori nutriționale: Calorii: 450 kcal, Proteine: 30 g, Grăsimi: 28 g, Carbohidrați: 10 g, Sodiu: 500 mg</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Capotana">
+                <h3>Capotana ~120g</h3>
+                <p class="ingredients">Tocăniță de vinete, roșii, ceapă, țelină, măsline, capere, gătită cu oțet și zahăr pentru un gust dulce-acrișor</p>
+                <p class="nutrition">Valori nutriționale: Calorii: 150 kcal, Proteine: 2 g, Grăsimi: 10 g, Carbohidrați: 15 g, Sodiu: 300 mg</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+
+            <h2>Vinuri ~750ml</h2>
+
+            <div class="dish" data-nume="Barolo">
+                <h3>Barolo</h3>
+                <p class="ingredients">Vin roșu  Note de: cireșe negre și lemn dulce</p>
+                <p class="nutrition">Calorii per pahar: 125</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Chianti Classico">
+                <h3>Chianti Classico</h3>
+                <p class="ingredients">Vin roșu  Note de: fructe roșii, violete și o ușoară tentă de pământ</p>
+                <p class="nutrition">Calorii per pahar: 120</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Amarone della Valpolicella">
+                <h3>Amarone della Valpolicella</h3>
+                <p class="ingredients">Vin roșu  Note de: cireșe negre, smochine și ciocolată</p>
+                <p class="nutrition">Calorii per pahar: 150</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Soave">
+                <h3>Soave</h3>
+                <p class="ingredients">Vin alb  Note de: mere verzi, migdale și note florale</p>
+                <p class="nutrition">Calorii per pahar: 110</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Verdicchio dei Castelli di Jesi">
+                <h3>Verdicchio dei Castelli di Jesi</h3>
+                <p class="ingredients">Vin alb  Note de: citrice și minerale</p>
+                <p class="nutrition">Calorii per pahar: 115</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Gavi">
+                <h3>Gavi</h3>
+                <p class="ingredients">Vin alb  Note de: piersici, lămâie și migdale</p>
+                <p class="nutrition">Calorii per pahar: 110</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Chiaretto di Bardolino">
+                <h3>Chiaretto di Bardolino</h3>
+                <p class="ingredients">Vin rose  Note de: căpșuni și flori de primăvară</p>
+                <p class="nutrition">Calorii per pahar: 115</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Cerasuolo d'Abruzzo">
+                <h3>Cerasuolo d'Abruzzo</h3>
+                <p class="ingredients">Vin rose  Note de: cireșe și fructe de pădure</p>
+                <p class="nutrition">Calorii per pahar: 120</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Franciacorta Cuvée Prestige Ca' del Bosco">
+                <h3>Franciacorta Cuvée Prestige Ca' del Bosco</h3>
+                <p class="ingredients">Vin spumant  Note de: mere verzi, citrice, migdale și o ușoară aromă de brioșe</p>
+                <p class="nutrition">Calorii per pahar: 95</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+
+            <h2>Cafea si racoritoare</h2>
+            <div class="dish" data-nume="Ristretto">
+                <h3>Ristretto</h3>
+                <p class="nutrition">Cantitate: 20ml, Calorii: 5</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Espresso">
+                <h3>Espresso</h3>
+                <p class="nutrition">Cantitate: 30ml, Calorii : 5</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p class="nutrition">Cantitate: 150ml, Calorii: 80</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Machiato">
+                <h3>Machiato</h3>
+                <p class="nutrition">Cantitate: 40ml, Calorii: 15</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Affogato con vaniglia">
+                <h3>Affogato con vaniglia</h3>
+                <p class="nutrition">Cantitate: 80ml, Calorii: 200</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Coca Cola">
+                <h3>Coca Cola</h3>
+                <p class="nutrition">Cantitate: 330ml, Calorii: 139</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="Coca Cola Zero">
+                <h3>Coca Cola Zero</h3>
+                <p class="nutrition">Cantitate: 330ml, Calorii: 1</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div class="dish" data-nume="San Pellegrino Limonata">
+                <h3>San Pellegrino Limonata</h3>
+                <p class="nutrition">Cantitate: 330ml, Calorii: 110</p>
+                <button class="adauga-favorite">Adaugă la favorite</button>
+            </div>
+            <div id="favorite-lista">
+                <h1>Preparatele favorite:</h3>
+                <ul id="lista-favorite"></ul>
+            </div>    
+        </section>
+        
+    </main>
+
+    <footer>
+        <p class="footer-text">&copy; 2024 Tavola di Nonna. Toate drepturile rezervate.</p>    
+    </footer>
+
+</body>
+</html>
+
